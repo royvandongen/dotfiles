@@ -250,6 +250,14 @@ defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 # Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
+# =============================================================================#
+# iTunes                                                                       #
+# =============================================================================#
+
+# disable iTunes device backups:
+defaults write com.apple.iTunes AutomaticDeviceBackupsDisabled -bool true
+defaults write com.apple.iTunes DeviceBackupsDisabled -bool true
+
 ###############################################################################
 # Spotlight                                                                   #
 ###############################################################################
