@@ -296,14 +296,17 @@ defaults write com.apple.messageshelper.MessageController SOInputLineSettings -d
 # PMSet Commands (power settings                                              #
 ###############################################################################
 
-# Set sleep when on battery
-pmset -b sleep 21
+# Set system sleep when on battery
+pmset -b sleep 30
 
-# set sleep when on mains power
-pmset -c sleep 21
+# set system sleep when on mains power
+pmset -c sleep 60
 
-# set the half-dim display state to match sleep
-pmset -c halfdim 0
+# set display sleep
+pmset -c displaysleep 0
+
+# set the half-dim display state to disabled by disabling low-power mode
+pmset -b lowpowermode 0
 
 ###############################################################################
 # Kill/restart affected applications                                          #
