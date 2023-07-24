@@ -1,0 +1,26 @@
+[user]
+  name = Roy van Dongen
+  email = 
+[core]
+  editor = vim
+  excludesfile = ~/.gitignore
+  autocrlf = input
+[color]
+  branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+[init]
+  defaultBranch = master
+[web]
+  browser = google-chrome
+[credential]
+  helper = osxkeychain
+[push]
+  default = simple
+[merge]
+  tool = kdiff3
+[difftool]
+  prompt = false
+[pull]
+	rebase = true
