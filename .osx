@@ -102,8 +102,14 @@ defaults write com.apple.screencapture type -string "png"
 defaults write com.apple.screencapture disable-shadow -bool true
 
 ###############################################################################
-# Screensaver                                                                 #
+# Screensaver and Login Window                                                #
 ###############################################################################
+# Show shut down etc. buttons
+sudo defaults write /Library/Preferences/com.apple.loginwindow PowerOffDisabled -bool false
+
+# Don't show any password hints
+sudo defaults write /Library/Preferences/com.apple.loginwindow RetriesUntilHint -int 0
+
 # This might not be working anymore since later OSX Versions
 
 # Set default screensaver time to 10 minutes
@@ -114,6 +120,13 @@ defaults write com.apple.screensaver askForPassword 1
 
 # Number of seconds before requiring password on screensaver disable
 defaults write com.apple.screensaver askForPasswordDelay -1
+
+###############################################################################
+# Menu Bar                                                                    #
+###############################################################################
+
+# Menu bar: battery hide percentage
+defaults write com.apple.menuextra.battery ShowPercent -string "YES"
 
 ###############################################################################
 # Finder                                                                      #
