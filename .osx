@@ -303,10 +303,10 @@ pmset -b sleep 30
 pmset -c sleep 60
 
 # set display sleep
-pmset -c displaysleep 0
+pmset -a displaysleep 0
 
 # set the half-dim display state to disabled by disabling low-power mode
-pmset -b lowpowermode 0
+pmset -a lowpowermode 0
 
 ###############################################################################
 # Kill/restart affected applications                                          #
