@@ -61,7 +61,8 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
 # Auto focus on window instead of requiring second click
 # https://apple.stackexchange.com/questions/269622/macos-windows-requiring-an-explicit-click-to-make-active-before-ui-elements-ins
-defaults write com.apple.Terminal FocusFollowsMouse -string YES
+# Set to disable again because of really annoying focus follow mouse issues when having multiple windows.
+defaults write com.apple.Terminal FocusFollowsMouse -string NO
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
