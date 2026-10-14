@@ -127,7 +127,7 @@ defaults write com.apple.screensaver askForPasswordDelay -1
 ###############################################################################
 
 # Menu bar: battery show percentage
-defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+defaults -currentHost write com.apple.controlcenter BatteryShowPercentage -bool true
 
 ###############################################################################
 # Finder                                                                      #
