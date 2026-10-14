@@ -1,6 +1,6 @@
 [user]
   name = Roy van Dongen
-  email = 
+  email = {ID}+{username}@users.noreply.github.com
 [core]
   editor = vim
   excludesfile = ~/.gitignore
