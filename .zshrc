@@ -16,9 +16,6 @@ zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower
 # Initialize the autocompletion
 autoload -Uz compinit && compinit -i
 
-#https://apple.stackexchange.com/questions/269622/macos-windows-requiring-an-explicit-click-to-make-active-before-ui-elements-ins
-defaults write com.apple.Terminal FocusFollowsMouse -string YES
-
 unset LSCOLORS
 export CLICOLOR=1
 export CLICOLOR_FORCE=1
