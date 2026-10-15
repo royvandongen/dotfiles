@@ -1,6 +1,11 @@
 alias flushdns="sudo killall -HUP mDNSResponder"
 alias youtube='yt-dlp --extract-audio --audio-format mp3 '
 
+# Homebrew (Apple Silicon)
+if [ -x /opt/homebrew/bin/brew ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
+
 # Highlight the current autocomplete option
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 
